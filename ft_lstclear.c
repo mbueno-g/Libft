@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-/*Si eliminas un elemento luego no puedes acceder a su next
- * CUIDADO CON PARENTESIS LINEA 24
-**/
-
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*a;
