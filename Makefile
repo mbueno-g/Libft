@@ -6,7 +6,7 @@
 #    By: mbueno-g <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/08 15:57:21 by mbueno-g          #+#    #+#              #
-#    Updated: 2021/04/18 11:57:26 by mbueno-g         ###   ########.fr        #
+#    Updated: 2021/09/07 18:08:27 by mbueno-g         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,9 +66,9 @@ OBJS = $(SRCS:.c=.o)
 
 OBJSB = $(SRCSB:.c=.o)
 
-$(NAME): 
-	gcc $(FLAGS) -c $(SRCS) 
-	$(AR) $(NAME) $(OBJS) 
+$(NAME): $(SRCS) $(SRCSB)
+	gcc $(FLAGS) -c $(SRCS) $(SRCSB) 
+	$(AR) $(NAME) $(OBJS) $(OBJSB)
 
 all: $(NAME)
 
