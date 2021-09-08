@@ -18,29 +18,6 @@
  * dst string was longer than dstsize
 */
 
-/*size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
-{
-	size_t	dst_len;
-	size_t	src_len;
-	size_t	i;
-
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	i = dst_len;
-	if (!src_len && !dstsize)
-		return (0);
-	else if (i > dstsize - 1)
-		return (dstsize + src_len);
-	while ((*src != '\0') && (i < dstsize - 1) && (dstsize != 0))
-	{
-		*(dst + i) = *src;
-		i++;
-		src++;
-	}
-	*(dst + i) = '\0';
-	return (dst_len + src_len);
-}*/
-
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	len;

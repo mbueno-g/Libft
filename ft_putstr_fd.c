@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-/* Pongo el if porque sino sale que no está protegido*/
-
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (s)

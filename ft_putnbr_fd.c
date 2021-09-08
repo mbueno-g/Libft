@@ -12,19 +12,6 @@
 
 #include "libft.h"
 
-/* void	ft_putnbr_fd(int n, int fd)
-{
-	char	*c;
-
-	c = ft_itoa(n);
-	ft_putstr_fd(c,fd);
-}*/
-
-/* Si declaramos el numero con un long gestiona bien el maximo
- * y el minimo de un int.*/
-
-/* ¿Por que en la linea 40 no da problemas al pasarle a un int un long?*/
-
 void	ft_putnbr_fd(int num, int fd)
 {
 	long	n;
