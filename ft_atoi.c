@@ -35,7 +35,7 @@ int	ft_atoi(const char *str)
 			cont = -cont;
 		i++;
 	}
-	while (str[i] >= '0' & str[i] <= '9')
+	while (str[i] >= '0' && str[i] <= '9')
 	{
 		if (num * cont > 214748364 && str[i] - '0' > 7)
 			return (-1);
